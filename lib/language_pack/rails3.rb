@@ -83,7 +83,7 @@ private
           # cache assets if task was successful.
           if bundler.has_gem?('turbo-sprockets-rails3')
             log("assets_clean_expired") do
-              clean_expired = rake.task('aseets:clean_expired')
+              clean_expired = rake.task('assets:clean_expired')
               return true unless clean_expired.is_defined?
               clean_expired.invoke(env: rake_env)
               if clean_expired.success?
