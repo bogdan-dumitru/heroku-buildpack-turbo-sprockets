@@ -64,8 +64,6 @@ private
           return true
         end
 
-        puts "Precompiling assets with env: #{rake_env}"
-
         FileUtils.mkdir_p('public')
         cache.load "public/assets"
 
