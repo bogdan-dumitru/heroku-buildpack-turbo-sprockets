@@ -95,6 +95,7 @@ private
               end
             end
           else
+            puts "Could nit find turbo-sprockets-rails3 gem. Clearing cache."
             cache.clear "public/assets"
           end
         else
